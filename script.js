@@ -26,5 +26,9 @@ function sendCall(phoneNumberValue){
         headers: {'Content-Type': 'application/json'}
     }
 
-    fetch(url, options);
+    fetch(url, options).then(() => {
+        alert("Call sent!")
+        input.value = "";
+    });
+
 }
