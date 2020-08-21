@@ -1,7 +1,8 @@
 
 var input = document.querySelector("#phone");
+var button = document.getElementById("callButton");
 
-let url = "localhost:1832"
+let url = "http://localhost:1832/call"
 
 window.intlTelInput(input, {
     onlyCountries: ['us'],
@@ -9,12 +10,21 @@ window.intlTelInput(input, {
 });
     
     
-input.addEventListener("click", function(){
+button.addEventListener("click", function(){
+    if(input.value.length == 10){
+        sendCall("+1" + input.value)
+    }else{
+        alert("Enter proper phone number!")
+    }
+})
+
+
+function sendCall(phoneNumberValue){
     const options = {
         method: "POST", 
-        body: JSON.stringify({phoneNumber: input.value}),
+        body: JSON.stringify({phoneNumber: phoneNumberValue}),
         headers: {'Content-Type': 'application/json'}
     }
 
     fetch(url, options);
-})
+}
