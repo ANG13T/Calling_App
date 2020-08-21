@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  margin: 20px;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.iti__hide {
+  display: none; }
+
+pre {
+  margin: 0 !important;
+  display: inline-block; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none; }
+
+input, button {
+  height: 35px;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit; }
+  input[disabled], button[disabled] {
+    background-color: #eee; }
+
+input, select {
+  border: 1px solid #CCC;
+  width: 250px; }
+
+::-webkit-input-placeholder {
+  color: #BBB; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #BBB;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #BBB; }
+
+button {
+  color: #FFF;
+  background-color: #428BCA;
+  border: 1px solid #357EBD; }
+  button:hover {
+    background-color: #3276B1;
+    border-color: #285E8E;
+    cursor: pointer; }
+
+#result {
+  margin-bottom: 100px; }
+
+.title{
+  color: white;
+  font-size: 3rem;
+}
+
+#callButton{
+  margin-top: 3vh;
+  width: 100%;
+}
+
+#phone{
+  height: 3rem;
+  width: 100%;
+}
+
+.main{
+  text-align: center;
+  margin-top: 4rem;
+  width: 24rem;
+  margin:auto;
+}
