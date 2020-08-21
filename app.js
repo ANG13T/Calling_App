@@ -12,6 +12,7 @@ const client = require('twilio')(accountSid, authToken);
 
 
 app.post('/call', (req, res) => {
+  console.log("recieved request")
   client.calls
   .create({
      url: 'http://demo.twilio.com/docs/classic.mp3',

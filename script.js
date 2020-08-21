@@ -10,5 +10,11 @@ window.intlTelInput(input, {
     
     
 input.addEventListener("click", function(){
-    fetch()
+    const options = {
+        method: "POST", 
+        body: JSON.stringify({phoneNumber: input.value}),
+        headers: {'Content-Type': 'application/json'}
+    }
+
+    fetch(url, options);
 })
